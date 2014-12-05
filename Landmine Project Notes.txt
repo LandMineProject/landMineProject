@@ -1,0 +1,43 @@
+Model: 
+Initialize a 2D 8x8 array with randomly assigned boolean values to each square
+- has to have 10 true, 54 false values
+
+Initialize Integer value of 'lives'
+-3 lives should be assigned 
+
+Initialize Integer value of 'Score'
+-score will start at 0
+
+identify messages View sends out from button presses
+-button variables should correspond with array values
+-if array value is false, add 1 to 'Score'
+-if array value is true, subtract 1 from 'lives'
+
+Able to send messages to View with 'Score' report and 'Lives' report, as well as
+bomb reveal.
+
+Able to send message 'Game Over' to View and quit program if 'Quit' button is pressed
+or restarts program if 'Restart' button is pressed
+
+
+
+View: 
+Initialize 8x8 grid button array
+-each button should have unique variable name and unique display
+-Sends message into space that a button was clicked in a specific position
+-Identifies boolean 'bomb' messages from Model
+-Displays if there was a bomb on that space or not depending on boolean 'bomb' value
+
+Initialize 'Score' display
+-Sends message into space for Integer 'Score'
+-Identifies 'Score' Integer message sent by Model
+
+Intialize 'Lives' display
+-Sends message for Integer 'Lives'
+-Identifies 'Lives' Integer message sent by Model
+
+Initialize 'Game Over' Screen
+-only displays if View identifies 'Lives' value is 0
+-displays 2 buttons, 'Restart' and 'Quit'
+-Sends message into space if 'Restart' is clicked, restart program.
+ If 'Quit' is clicked, end program
