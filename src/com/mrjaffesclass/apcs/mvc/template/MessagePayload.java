@@ -10,14 +10,14 @@ package com.mrjaffesclass.apcs.mvc.template;
 public class MessagePayload {
   
   private final int field;
-  private final int direction;
+  private final boolean direction;
   
   /**
    * Class constructor
    * @param _field Text field 1 or 2
    * @param _direction Direction (Constants.UP or Constants.DOWN)
    */
-  public MessagePayload(int _field, int _direction) {
+  public MessagePayload(int _field, boolean _direction) {
     field = _field;
     direction = _direction;
   }
@@ -26,7 +26,7 @@ public class MessagePayload {
    * Getter method for the direction
    * @return Field value
    */
-  public int getDirection() {
+  public boolean getBoolean() {
     return direction;
   }
   
@@ -34,7 +34,7 @@ public class MessagePayload {
    * Getter method for the 
    * @return 
    */
-  public int getField() {
+  public int getNumber() {
     return field;
   }
   
