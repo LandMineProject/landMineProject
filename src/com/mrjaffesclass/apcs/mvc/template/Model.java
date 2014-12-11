@@ -1,7 +1,6 @@
 package com.mrjaffesclass.apcs.mvc.template;
 
 import com.mrjaffesclass.apcs.messenger.*;
-import java.util.Arrays;
 
 /**
  * The model represents the data that the app uses.
@@ -69,32 +68,6 @@ public class Model implements MessageHandler {
     return variable1;
   }
 
-  public void clearBoard() {
-      int nums[][] = new int[8][8];
-      boolean[][] board = new boolean[8][8];
-      Arrays.fill(board, Boolean.FALSE);      
-       }
-  
-  public void randomizeMines() {
-      for(int i=0; i<=10; i++){
-          int j = (int) (Math.random()*9);
-          int k = (int) (Math.random()*9);
-          boolean[][] array = new boolean [j][k];
-          if(array[j][k]!=true){
-              Arrays.fill(array, Boolean.TRUE);
-          }
-      }
-  }
-  
-  public int numLives() {
-      int lives = 3;
-      return lives;
-  }
-  
-  public int score() {
-     int score = 0;
-     return score;
-  }
   /**
    * Setter function for variable 1
    * @param v New value of variable1
