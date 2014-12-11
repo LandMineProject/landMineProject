@@ -1185,8 +1185,6 @@ public class View extends javax.swing.JFrame implements MessageHandler {
     private javax.swing.JButton hh;
     // End of variables declaration//GEN-END:variables
 
-    @Override
-    public void messageHandler(String messageName, Object messagePayload) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
-}
+
